@@ -16,11 +16,13 @@
 package com.handmark.pulltorefresh.extras.viewpager;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 
 import com.ichongliang.hpull.library.PullToRefreshBase;
+import com.ichongliang.hpull.library.internal.LoadingLayout;
 import com.shine.niceapp.R;
 
 public class PullToRefreshViewPager extends PullToRefreshBase<ViewPager> {
@@ -67,5 +69,10 @@ public class PullToRefreshViewPager extends PullToRefreshBase<ViewPager> {
 		}
 
 		return false;
+	}
+
+	@Override
+	protected LoadingLayout createLoadingLayout(Context context, Mode mode, TypedArray attrs) {
+		return super.createLoadingLayout(context, mode, attrs);
 	}
 }

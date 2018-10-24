@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <com.handmark.pulltorefresh.extras.viewpager.PullToRefreshViewViewPager
+        android:id="@+id/refreshPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        ptr:ptrAnimationStyle="rotate_and_anim"
+        ptr:ptrDrawable="@drawable/loading_1"
+        ptr:ptrMode="both"
+        ptr:ptrScrollingWhileRefreshingEnabled="false">
+
+    </com.handmark.pulltorefresh.extras.viewpager.PullToRefreshViewViewPager>
+</LinearLayout>
